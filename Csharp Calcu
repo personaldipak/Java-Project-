@@ -1,0 +1,42 @@
+       int num1 = 0; int num2 = 0;
+
+            //Display the title of program
+            Console.WriteLine("Console Line Calculator\n-----------------------\n");
+
+            //Ask user the to enter first number
+            Console.WriteLine("Type the Number, Press Enter Key");
+            num1 = Convert.ToInt32(Console.ReadLine());
+
+            //Ask user the to enter second number
+            Console.WriteLine("Type Another Number, Press Enter Key");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("\nCalculation Options");
+            Console.WriteLine("1. Add");
+            Console.WriteLine("2. Subject");
+            Console.WriteLine("3. Multiply");
+            Console.WriteLine("4. Divide");
+            Console.WriteLine("5. BMI");
+            Console.Write("Choose a Option: ");
+
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Console.WriteLine($"\nYour result: {num1} + {num2} = " + (num1 + num2));
+                    break;
+                case "2":
+                    Console.WriteLine($"\nYour result: {num1} - {num2} = " + (num1 - num2));
+                    break;
+                case "3":
+                    Console.WriteLine($"\nYour result: {num1} * {num2} = " + (num1 * num2));
+                    break;
+                case "4":
+                    Console.WriteLine($"\nYour result: {num1} / {num2} = " + (num1 / num2));
+                    break;
+                case "5":
+                    Console.WriteLine($"\nYour result: {num1} / {num2} = " + (num1 / num2));
+                    break;
+            }
+
+            Console.Write("\nPress any key to close the Calculator console app...");
+            Console.ReadKey();
